@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patricia Bath</title>
+  <link rel="stylesheet" href="stylesGaler.css" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="images/header.jpg" alt="" height="200">
+      <h1 class="pbath"><a href="/index.html">Patricia Bath</a></h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">Inici</a></li>
+        <li><a href="/biografia.html">Biografia</a></li>
+        <li><a href="/obra.html">Obra</a></li>
+        <li><a href="/galeria.html" class="on">Galeria</a></li>
+      </ul>
+    </nav>
+    <section class="content">
+      <div class="main" id=>
+              <!-- Vista secundaria -->
+      <div class="side_view"> 
+        <img src="images/inici.jpg" onclick="change(this.src)"> 
+        <img src="images/biografia1.jpg" onclick="change(this.src)"> 
+        <img src="images/biografia2.jpg" onclick="change(this.src)"> 
+        <img src="images/obra2.jpg" onclick="change(this.src)">
+        <img src="images/obra1.jpg" onclick="change(this.src)"> 
+        <img src="images/obra3.jpeg" onclick="change(this.src)"> 
+        <!-- Vista principal de la imatge-->
+        <div class="main_view"> 
+          <img src="images/inici.jpg" id="main" alt="IMAGE"> 
+      </div> 
+
+
+      </div> 
+      </div>
+      
+    </section>
+    <footer>
+      <p>&copy; Blai Calero Soler</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

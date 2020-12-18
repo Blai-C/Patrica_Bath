@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.15em;	
+  background-color: #ececec;
+}
+p{
+  padding-bottom: 10px;
+  font-size: 109%;
+}
+.container{
+  max-width: 1920px;
+  min-width: 1000px; 
+  width: 80%;
+  margin: 10px auto 10px auto;
+  background-color: #ffffff;
+}
+.container header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(102, 173, 214) ;
+  
+}
+header h1{
+  padding: 0px 20px; 
+  font-family: Helvetica, sans-serif;
+  font-size: 5em;
+}
+header a{
+  text-decoration: none;
+  color: #000000;
+}
+header img:logo{
+  width: 20%;
+  height: auto;
+}
+.navbar{
+  width: 90%;
+  padding: 15px 5%;
+  margin: 0px auto 40px auto;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+}
+li{
+  display: inline-block;
+  margin: 0px 3px;
+}
+.navbar a{
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 25px;
+  font-size: 150%;
+}
+.navbar a:hover, .navbar a.on{
+  color: #3f8fc4;;
+}
+.content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer{
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+}
+/*Galeria per JS*/
+      .main{ 
+          padding: 30px 50px;
+          text-align: center;
+          background-color: rgb(102, 173, 214);
+      } 
+      .side_view{ 
+          display: flex; 
+          justify-content: center; 
+          flex-wrap: wrap;
+      } 
+      .side_view img{ 
+          width: 9rem; 
+          height: 7rem; 
+          object-fit: cover; 
+          cursor: pointer; 
+          margin:0.5rem; 
+      }
+      .main_view{ 
+        margin: auto auto;
+        width: 100%; 
+        height: 50rem; 
+    } 
+    .main_view img{ 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+
+/* Transitions*/
+
+.container header h1 { transition: all .2s ease-in-out; }
+.container header h1:hover { transform: scale(1.02); }
+
+
+.container nav li { transition: all .2s ease-in-out; }
+.container nav li:hover { transform: scale(1.08); }
+
+
+
+
+
+
+/*media queries iphone*/
+
+
+@media only screen
+
+  and (min-width: 375px)
+
+  and (max-width: 812px) {
+  .container{
+    width: 100%;
+    margin: 0px auto;
+    min-width: 375px;
+    max-width: 812px;
+  }
+  .navbar a{
+    padding: 0px 10px;
+  }
+
+}
